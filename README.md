@@ -1,5 +1,5 @@
-## Modeling and Novelty Detection in EEG signals
-# For detection epilepsy abnormalities
+# Modeling and Novelty Detection in EEG signals
+## For detection epilepsy abnormalities
 
 Epilepsy affects approximately 1% of the world's population and the majority of them lives in the low and middle-income countries (LMICs). Epilepsy is usually diagnosed by a human interpreter that reads through an EEG recording. The main barrier for people being diagnosed and treated for epilepsy, in LMICs, is the limited accessibility of EEG and the lack of interpreters. McKenzie et al. (2017) describes a study were data from portable EEG scanners is sent abroad for analysis by voluntaries.
 This thesis examines how to shorten the time spent manually interpreting the EEG recordings, by using novelty detection. A preprocessing pipeline is suggested and two methods for novelty detection are examined.  
