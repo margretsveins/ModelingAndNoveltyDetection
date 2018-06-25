@@ -9,9 +9,10 @@ The thesis uses two real EEG data sets to validate the process. The first data s
 These first steps of running experiments on the data from the SBS2 show promising results. They offer an option to implement; a data quality control, a global discriminant using MAD and novelty detection to localize the abnormal data points. From a practical point of view, this thesis contributes an analysis on how to shorten the time spent on interpreting the data. This analysis could be used as preliminary work for future studies on the interpretation of SBS2 data from epilepsy patients in the LMICs.
 
 
-## Preprocessing
+## Preprocessing Folder
+Preprocessing is mostly done in the script Main. These following functions are used there:
 
-Main.m includes:
-* GetData.m:  Extract data, adds channel location and transfer data from bipolar to unipolar if necessary
--- unipolar.m: Transform data from bipolar to unipolar
--- ReconstructData.m: PCA used to help with ranking issues.
+* Main.m includes:
+  * GetData.m:  Extract data, adds channel location and transfer data from bipolar to unipolar if necessary
+    * unipolar.m: Transform data from bipolar to unipolar
+    * ReconstructData.m: PCA used to help with ranking issues.
