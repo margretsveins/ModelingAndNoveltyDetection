@@ -9,7 +9,7 @@ The thesis uses two real EEG data sets to validate the process. The first data s
 These first steps of running experiments on the data from the SBS2 show promising results. They offer an option to implement; a data quality control, a global discriminant using MAD and novelty detection to localize the abnormal data points. From a practical point of view, this thesis contributes an analysis on how to shorten the time spent on interpreting the data. This analysis could be used as preliminary work for future studies on the interpretation of SBS2 data from epilepsy patients in the LMICs.
 
 
-## Preprocessing folder:
+### Preprocessing folder:
 Preprocessing is mostly done in the script Main and Preprocess_SBS2. These following functions are used there:
 
 Main.m and Preprocess_SBS2 includes:
@@ -21,13 +21,13 @@ Main.m and Preprocess_SBS2 includes:
 * GetFeatures.m: Extract the PSD features and Energy of the signal 
 * GetFeatures1.m: Extract the Energy of the signal
 
-## Gaussian folder:
+### Gaussian folder:
 * The scripts Main_Model1_new2.m and Main_SBS2_Model1_NEW.m were used to generate all the results for the Maximum log likelihood model
    * Log_normal_clean.m computes the likelihood and plots up the zero-one signal
    * ROC_points.m computes TPR and FPR based on the likelihood
    * QplotNew.m used to make the Qplots
 
-## GMM folder:
+### GMM folder:
 * Model2_new_cooling.m: The robust GMM model
    * Gm_cost.m used to initialize the first component
 * Model2_Parameter_Validate.m: script to validate parameters
