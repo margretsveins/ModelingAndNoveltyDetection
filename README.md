@@ -13,4 +13,5 @@ These first steps of running experiments on the data from the SBS2 show promisin
 
 Main.m includes:
 * GetData.m:  Extract data, adds channel location and transfer data from bipolar to unipolar if necessary
-- unipolar.m: Transform data from bipolar to unipolar
+-- unipolar.m: Transform data from bipolar to unipolar
+-- ReconstructData.m: PCA used to help with ranking issues.
