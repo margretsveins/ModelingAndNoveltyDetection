@@ -22,7 +22,7 @@ Main.m and Preprocess_SBS2 includes:
 * GetFeatures1.m: Extract the Energy of the signal
 
 ### Gaussian folder:
-* The scripts Main_Model1_new2.m and Main_SBS2_Model1_NEW.m were used to generate all the results for the Maximum log likelihood model
+* The scripts Main_Model1.m and Main_Model1_SBS2.m were used to generate all the results for the Maximum log likelihood model
    * Log_normal_clean.m computes the likelihood and plots up the zero-one signal
    * ROC_points.m computes TPR and FPR based on the likelihood
    * QplotNew.m used to make the Qplots
