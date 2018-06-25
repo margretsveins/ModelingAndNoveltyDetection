@@ -10,9 +10,31 @@ These first steps of running experiments on the data from the SBS2 show promisin
 
 
 ## Preprocessing Folder
-Preprocessing is mostly done in the script Main. These following functions are used there:
+Preprocessing is mostly done in the script Main and Preprocess_SBS2. These following functions are used there:
 
-* Main.m includes:
-  * GetData.m:  Extract data, adds channel location and transfer data from bipolar to unipolar if necessary
-    * unipolar.m: Transform data from bipolar to unipolar
-    * ReconstructData.m: PCA used to help with ranking issues.
+Main.m and Preprocess_SBS2 includes:
+ * GetData.m:  Extract data, adds channel location and transfer data from bipolar to unipolar if necessary
+  * unipolar.m: Transform data from bipolar to unipolar
+ * ReconstructData.m: PCA used to help with ranking issues.
+ * cleanData.m: Run ICA and remove artifacts
+  * remove_artifacts.m: remove artifacts, uses functions from  http://www2.imm.dtu.dk/ lf-fr/publications/indexpub.php
+* GetFeatures.m: Extract the PSD features and Energy of the signal 
+* GetFeatures1.m: Extract the Energy of the signal
+
+## Maximum log likelihood of Gaussian
+* The scripts Main_Model1_new2.m and Main_SBS2_Model1_NEW.m were used to generate all the results 
+ * Log_normal_clean.m computes the likelihood and plots up the zero-one signal
+ * ROC_points.m computes TPR and FPR based on the likelihood
+ * QplotNew.m used to make the Qplots
+
+## GMM 
+* Model2_new_cooling.m: The robust GMM model
+ * Gm_cost.m used to initialize the first component
+* Model2_Parameter_Validate.m: script to validate parameters
+ * Model2_eMax.m used to find optimal e_max
+ * Model2_alpha_t.m used to find optimal tau_alpha and alpha_0
+* Model2_results.m used to generate final results
+* Main_Model2.m used to make explanatory plots and small tests.  
+
+
+
