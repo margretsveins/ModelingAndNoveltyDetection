@@ -23,16 +23,16 @@ Main.m and Preprocess_SBS2 includes:
 
 ## Maximum log likelihood of Gaussian
 * The scripts Main_Model1_new2.m and Main_SBS2_Model1_NEW.m were used to generate all the results 
- * Log_normal_clean.m computes the likelihood and plots up the zero-one signal
- * ROC_points.m computes TPR and FPR based on the likelihood
- * QplotNew.m used to make the Qplots
+   * Log_normal_clean.m computes the likelihood and plots up the zero-one signal
+   * ROC_points.m computes TPR and FPR based on the likelihood
+   * QplotNew.m used to make the Qplots
 
 ## GMM 
 * Model2_new_cooling.m: The robust GMM model
- * Gm_cost.m used to initialize the first component
+   * Gm_cost.m used to initialize the first component
 * Model2_Parameter_Validate.m: script to validate parameters
- * Model2_eMax.m used to find optimal e_max
- * Model2_alpha_t.m used to find optimal tau_alpha and alpha_0
+   * Model2_eMax.m used to find optimal e_max
+   * Model2_alpha_t.m used to find optimal tau_alpha and alpha_0
 * Model2_results.m used to generate final results
 * Main_Model2.m used to make explanatory plots and small tests.  
 
