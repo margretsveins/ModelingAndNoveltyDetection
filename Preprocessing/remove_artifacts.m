@@ -1,5 +1,8 @@
 function eegcleaned = remove_artifacts(EEGICA)
-% This is from Laura example use.
+% This is from Laura Froelich, available online at 
+% http://www2.imm.dtu.dk/ lf-fr/publications/indexpub.php. as "example use".
+% The code was implemented and described in the article 
+% Classification of independent components of EEG into multiple artifact classes.
 
 % load the classifier using spatial features and the mean and standard deviations of the spatial features
 load('spatial_established_features3.mat')
