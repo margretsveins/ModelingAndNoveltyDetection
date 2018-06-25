@@ -14,10 +14,10 @@ Preprocessing is mostly done in the script Main and Preprocess_SBS2. These follo
 
 Main.m and Preprocess_SBS2 includes:
  * GetData.m:  Extract data, adds channel location and transfer data from bipolar to unipolar if necessary
-  * unipolar.m: Transform data from bipolar to unipolar
+    * unipolar.m: Transform data from bipolar to unipolar
  * ReconstructData.m: PCA used to help with ranking issues.
  * cleanData.m: Run ICA and remove artifacts
-  * remove_artifacts.m: remove artifacts, uses functions from  http://www2.imm.dtu.dk/ lf-fr/publications/indexpub.php
+    * remove_artifacts.m: remove artifacts, uses functions from  http://www2.imm.dtu.dk/ lf-fr/publications/indexpub.php
 * GetFeatures.m: Extract the PSD features and Energy of the signal 
 * GetFeatures1.m: Extract the Energy of the signal
 
