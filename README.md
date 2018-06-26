@@ -29,7 +29,7 @@ Main.m and Preprocess_SBS2 includes:
 
 ### GMM folder:
 * Model2_new_cooling.m: The robust GMM model
-   * Gm_cost.m used to initialize the first component
+   * gm_init.m used to initialize the first component
 * Model2_Parameter_Validate.m: script to validate parameters
    * Model2_eMax.m used to find optimal e_max
    * Model2_alpha_t.m used to find optimal tau_alpha and alpha_0
